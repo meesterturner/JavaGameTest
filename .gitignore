@@ -1,0 +1,5 @@
+[Bb]in/
+.settings/
+.classpath
+.project
+*.jar
