@@ -3,9 +3,9 @@ package net.anchridanex.javagame;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Player extends GameObject {
+public class BadGuy extends GameObject {
 
-	public Player(int x, int y, ObjectType type) {
+	public BadGuy(int x, int y, ObjectType type) {
 		super(x, y, type);
 		// TODO Auto-generated constructor stub
 	}
@@ -29,12 +29,7 @@ public class Player extends GameObject {
 
 	public void render(Graphics g) {
 		// TODO Auto-generated method stub
-		if(type == ObjectType.Player)
-			g.setColor(Color.blue);
-		
-		else
-			g.setColor(Color.green);
-		
+		g.setColor(Color.red);
 		
 		g.fillRect(x,  y, 32, 32);
 	}

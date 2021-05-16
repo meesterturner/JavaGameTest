@@ -20,19 +20,19 @@ public class Game extends Canvas implements Runnable {
 		this.addKeyListener(new KeyInput(h));
 		
 		new Window(WIDTH, HEIGHT, "This is a test in Java!", this);
-		//Random r = new Random();
+		Random r = new Random();
 		
-		h.addObject(new Player(WIDTH / 2, HEIGHT / 2, ObjectType.Player));
-		h.addObject(new Player(WIDTH / 4, HEIGHT / 4, ObjectType.Player2));
+		h.addObject(new Player(100, 100, ObjectType.Player));
+		h.addObject(new Player(200, 200, ObjectType.Player2));
 		
-		/*for(int i = 1; i <= 125; i++) {
-			Player p = new Player(r.nextInt(WIDTH), r.nextInt(HEIGHT), ObjectType.Player);
+		for(int i = 1; i <= 125; i++) {
+			BadGuy p = new BadGuy(r.nextInt(WIDTH), r.nextInt(HEIGHT), ObjectType.Baddie);
 			p.setVelX(r.nextInt(4) + 1);
 			p.setVelY(r.nextInt(4) + 1);
 			
 			h.addObject(p);
 			
-		}*/
+		}
 	}
 	
 	public static void main(String args[]) {
